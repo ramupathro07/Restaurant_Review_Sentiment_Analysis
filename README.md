@@ -64,13 +64,14 @@ nltk.download('stopwords')
 python restaurant_sentiment_analyzer.py
 ```
 ## 📁 Project Structure
-```
+
+```bash
 restaurant-review-sentiment-analyzer/
-├── data/
-│   └── Restaurant_Reviews.tsv
-├── restaurant_sentiment_analyzer.py     # Main Code (Single File)
+├── README.md
 ├── requirements.txt
-└── README.md
+├── Sentiment Analysis of Restaurant Reviews.ipynb
+└── data/
+    └── Restaurant_Reviews.tsv
 ```
 ## 📈 Model Performance
 
