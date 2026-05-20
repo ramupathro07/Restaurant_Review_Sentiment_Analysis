@@ -24,9 +24,7 @@ It uses **Natural Language Processing (NLP)** techniques and **Multinomial Naive
 - Naive Bayes model with hyperparameter tuning
 - Easy-to-use prediction function
 - Good accuracy for a classic ML model
-
 ---
-
 ## 📊 Dataset
 
 - File: `Restaurant_Reviews.tsv`
@@ -51,3 +49,65 @@ It uses **Natural Language Processing (NLP)** techniques and **Multinomial Naive
 ```bash
 git clone https://github.com/yourusername/restaurant-review-sentiment-analyzer.git
 cd restaurant-review-sentiment-analyzer
+```
+### 2. Install Requirements
+```
+pip install -r requirements.txt
+```
+### 3. Download NLTK Stopwords (Run once)
+```
+import nltk
+nltk.download('stopwords')
+```
+### 4. Run the Project
+```
+python restaurant_sentiment_analyzer.py
+```
+## 📁 Project Structure
+```
+restaurant-review-sentiment-analyzer/
+├── data/
+│   └── Restaurant_Reviews.tsv
+├── restaurant_sentiment_analyzer.py     # Main Code (Single File)
+├── requirements.txt
+└── README.md
+```
+## 📈 Model Performance
+
+- Best Accuracy: 78.5%
+- Best Alpha: 0.2
+- Precision: ~0.78
+- Recall: ~0.80
+
+## 💡 How to Use Prediction Function
+
+```
+predict_review("The food is really good here.")
+# Output: ✅ Positive Review
+
+predict_review("Food was bad and service was slow.")
+# Output: ❌ Negative Review
+```
+
+## 🔧 requirements.txt
+
+```
+pandas
+numpy
+nltk
+scikit-learn
+matplotlib
+seaborn
+```
+
+## 📌 Future Enhancements
+
+- Implement TF-IDF Vectorizer
+- Try Deep Learning models (LSTM, BERT)
+- Build a Web App using Streamlit
+- Add WordCloud visualization
+
+#### ⭐ If you found this project helpful, please give it a star!
+#### Feel free to fork and improve this project.
+
+
